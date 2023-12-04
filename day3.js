@@ -27,7 +27,9 @@ function handlePart1 (line, previousLine, nextLine) {
     let previousCharacters = previousLine.split('');
     let nextCharacters = nextLine.split('');
     for( let i = 1; i < characters.length-1; i++) {
-        if(characters[i])
+        if(typeof characters[i] === "number"){
+            if(typeof characters[i-1] === "number" && characters[i-1])
+        }
     }
     console.log(characters, previousCharacters, nextCharacters);
 };
